@@ -1,0 +1,96 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #1a1a1a;
+    --switch-bg: #ffffff;
+    --link-bar: #000000;
+}
+
+.dark-theme {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --switch-bg: #333333;
+    --link-bar: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links {
+    background-color: var(--link-bar);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.fa-brands {
+    color: white;
+    margin-right: 5px;
+}
+
+/* Switcher en haut à droite */
+#theme-toggle {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--switch-bg);
+    color: var(--text-color);
+    /* noir ou blanc selon le thème */
+    border: 2px solid var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#theme-toggle:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.name {
+    font-size: 4em;
+}
+
+.job {
+    font-size: 2em;
+}
+
+.description {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+footer {
+    color: var(var(--text-color));
+}
